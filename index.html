@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Risers</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="bg-white">
+    <!-- TOP NAVBAR -->
+    <!-- <div class="text-white body-font bg-black navbar-height">
+        <div class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center navbar-height">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img src="assets/img/logo.png" class="w-6 pr-2 border-r-2 border-gray-900" alt="Website Logo">
+                <img src="assets/img/logo-academy.svg" class="w-40 ml-2" alt="Academy Logo">
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+
+                <ion-icon name="search-outline" class="text-xl mr-3 antialiased"></ion-icon>
+                <ion-icon name="cart-outline" class="text-xl mr-3 antialiased"></ion-icon>
+                <ion-icon name="menu-outline" class="text-3xl antialiased"></ion-icon>
+
+                <button
+                    class="inline-flex items-center border-0 py-1 px-3 focus:outline-none rounded mt-4 md:mt-0 text-xs antialiased font-bold">LOGIN
+                </button>
+                <button
+                    class="inline-flex items-center orange-bg border-0 py-1 px-3 focus:outline-none rounded mt-4 md:mt-0 text-xs ml-3 antialiased font-bold">SIGN
+                    UP
+                </button>
+            </nav>
+        </div>
+    </div> -->
+
+    <!-- HEADER -->
+    <header class="text-white header">
+        <div class="container mx-auto flex justify-center">
+            <iframe src="https://player.vimeo.com/video/271002771?title=0&byline=0&portrait=0" width="1067" height="600"
+                frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+    </header>
+    <!-- COURSE TABS -->
+    <section
+        class="text-black body-font border-solid border-t-0 border-l-0 border-r-0 border-b border-gray-300 block sticky top-0 z-10 bg-white stick">
+        <div
+            class="container mx-auto flex flex-wrap p-4 sm:pt-4 sm:pb-4 sm:pl-0 sm:pr-0 sm:flex-row md:flex-row items-center justify-between custom-width sm:w-full">
+            <div class="hidden flex-wrap items-center text-xs font-bold antialiased sm:flex">
+                <a class="mr-5 hover:text-gray-900 orange-color">VIDEO</a>
+                <a class="mr-5 hover:text-gray-900">OVERVIEW</a>
+                <a class="mr-5 hover:text-gray-900">DESCRIPTION</a>
+                <a class="mr-5 over:text-gray-900">CLASS INSTRUCTOR</a>
+                <a class="mr-5 hover:text-gray-900">SIMILAR</a>
+                <a class="mr-5 hover:text-gray-900">Q&amp;A </a>
+                <a class="hover:text-gray-900">REVIEWS</a>
+            </div>
+
+            <div class="relative sm:hidden">
+                <select
+                    class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-state">
+                    <option>New Mexico</option>
+                    <option>Missouri</option>
+                    <option>Texas</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+                </div>
+            </div>
+
+            <div class="inline-flex lg:justify-end ml-5 lg:ml-0">
+                <button
+                    class="inline-flex items-center orange-bg border-0 py-1 px-3 focus:outline-none rounded sm:mt-4 md:mt-0 text-xs ml-3 text-white antialiased font-bold">BUY
+                    NOW
+                </button>
+            </div>
+        </div>
+    </section>
+    <div class="body-content">
+        <!-- COURSE DETAILS AND SIDEBAR -->
+        <section class="text-gray-700 body-font">
+            <div class="container py-4 mx-auto flex flex-wrap custom-width">
+                <div class="flex flex-wrap w-full">
+                    <!-- SIDEBAR -->
+                    <div class="lg:w-5/12 md:w-1/2 md:pr-10 order-last sm:order-first">
+                        <div
+                            class="flex relative table-of-contents pt-2 pb-2 pl-4 pr-4 text-sm font-bold text-black antialiased">
+                            TABLE OF CONTENTS
+                        </div>
+                        <div
+                            class="chapter relative table-secondary p-6 font-bold text-black antialiased sidebar-height overflow-auto">
+                            <!-- <div
+                            class="absolute top-0 left-0 right-0 bottom-0 z-20 bg-gradient-to-b from-transparent via-transparent to-white">
+                        </div> -->
+                            <!-- CHAPTER TITLE -->
+                            <div class="mb-4 text-xl">Chapter 1 | Something</div>
+                            <!-- CHAPTER ITEM -->
+                            <div class="chapter-item antialiased flex flex-col">
+                                <div class="flex items-center justify-between">
+                                    <div class="icon-title flex items-center text-base">
+                                        <ion-icon name="play-outline" class="mr-2 text-2xl"></ion-icon>
+                                        <h2>01 - What You’ll Learn</h2>
+                                    </div>
+                                    <div class="time text-xs">
+                                        <small>3:24m</small>
+                                    </div>
+                                </div>
+                                <div class="progress-container table-of-contents h-1 w-11/12 mt-3 self-end">
+                                    <div class="progress-amount orange-bg h-1 w-5/12"></div>
+                                </div>
+                                <div
+                                    class="chapter-description w-11/12 self-end text-base mt-2 chapter-description-color">
+                                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+                                </div>
+                            </div>
+
+                            <!-- CHAPTER ITEM -->
+                            <div class="chapter-item antialiased flex flex-col mt-5">
+                                <div class="flex items-center justify-between">
+                                    <div class="icon-title flex items-center text-base">
+                                        <ion-icon name="play-outline" class="mr-2 text-2xl orange-color leading-4">
+                                        </ion-icon>
+                                        <h2 class="orange-color">02 - Advanced pro compositing ideas</h2>
+                                    </div>
+                                    <div class="time text-xs">
+                                        <small>4:45m</small>
+                                    </div>
+                                </div>
+                                <div class="progress-container table-of-contents h-1 w-11/12 mt-3 self-end">
+                                    <div class="progress-amount orange-bg h-1 w-2/12"></div>
+                                </div>
+                                <div
+                                    class="chapter-description w-11/12 self-end text-base mt-2 chapter-description-color leading-4">
+                                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac
+                                        sollicitudin mi
+                                        morbi vestibulum.</small>
+                                </div>
+                            </div>
+
+                            <!-- CHAPTER TITLE -->
+                            <div class="mb-4 mt-8 text-xl">Chapter 2 | Creating the composite</div>
+                            <!-- CHAPTER ITEM -->
+                            <div class="chapter-item antialiased flex flex-col">
+                                <div class="flex items-center justify-between">
+                                    <div class="icon-title flex items-center text-base">
+                                        <ion-icon name="download-outline" class="mr-2 text-2xl"></ion-icon>
+                                        <h2>01 - Example documents for use</h2>
+                                    </div>
+                                    <div class="time text-xs">
+                                        <small>31MB</small>
+                                    </div>
+                                </div>
+                                <div class="progress-container table-of-contents h-1 w-11/12 mt-3 self-end">
+                                    <div class="progress-amount orange-bg h-1 w-1/12"></div>
+                                </div>
+                                <div
+                                    class="chapter-description w-11/12 self-end text-base mt-2 chapter-description-color leading-4">
+                                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac
+                                        sollicitudin.</small>
+                                </div>
+                            </div>
+
+                            <!-- CHAPTER ITEM -->
+                            <div class="chapter-item antialiased flex flex-col mt-5">
+                                <div class="flex items-center justify-between">
+                                    <div class="icon-title flex items-center text-base">
+                                        <ion-icon name="play-outline" class="mr-2 text-2xl leading-4">
+                                        </ion-icon>
+                                        <h2>02 - Best course ever</h2>
+                                    </div>
+                                    <div class="time text-xs">
+                                        <small>2:41m</small>
+                                    </div>
+                                </div>
+                                <div class="progress-container table-of-contents h-1 w-11/12 mt-3 self-end">
+                                    <div class="progress-amount orange-bg h-1 w-0"></div>
+                                </div>
+                                <div
+                                    class="chapter-description w-11/12 self-end text-base mt-2 chapter-description-color leading-4">
+                                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac
+                                        sollicimodo.</small>
+                                </div>
+                            </div>
+
+                            <!-- CHAPTER ITEM -->
+                            <div class="chapter-item antialiased flex flex-col mt-5">
+                                <div class="flex items-center justify-between">
+                                    <div class="icon-title flex items-center text-base">
+                                        <ion-icon name="lock-closed-outline" class="mr-2 text-2xl leading-4">
+                                        </ion-icon>
+                                        <h2>03 - The secret part of this course</h2>
+                                    </div>
+                                    <div class="time text-xs">
+                                        <small>14:28m</small>
+                                    </div>
+                                </div>
+                                <div class="progress-container table-of-contents h-1 w-11/12 mt-3 self-end">
+                                    <div class="progress-amount orange-bg h-1 w-0"></div>
+                                </div>
+                                <div
+                                    class="chapter-description w-11/12 self-end text-base mt-2 chapter-description-color leading-4">
+                                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac
+                                        sollicitudin
+                                        mi. Morbi vestibulum lorem ac.</small>
+                                </div>
+                            </div>
+
+                            <!-- CHAPTER ITEM -->
+                            <div class="chapter-item antialiased flex flex-col mt-5">
+                                <div class="flex items-center justify-between">
+                                    <div class="icon-title flex items-center text-base">
+                                        <ion-icon name="play-outline" class="mr-2 text-2xl leading-4">
+                                        </ion-icon>
+                                        <h2>04 - Now or never</h2>
+                                    </div>
+                                    <div class="time text-xs">
+                                        <small>4:43m</small>
+                                    </div>
+                                </div>
+                                <div class="progress-container table-of-contents h-1 w-11/12 mt-3 self-end">
+                                    <div class="progress-amount orange-bg h-1 w-0"></div>
+                                </div>
+                                <div
+                                    class="chapter-description w-11/12 self-end text-base mt-2 chapter-description-color leading-4">
+                                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac
+                                        sollicitudin
+                                        mi. Morbi vestibulum lorem ac.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .end courses left column-->
+                    <!-- BREADCRUMB -->
+                    <div class="lg:w-7/12 md:w-1/2 md:mt-0 order-first sm:order-last">
+                        <nav class="text-black font-bold text-xs antialiased breadcrumb-color" aria-label="Breadcrumb">
+                            <ol class="list-none p-0 inline-flex">
+                                <li class="flex items-center">
+                                    <a href="#">All classes</a>
+                                    <svg class="fill-current w-1 h-3 mx-2" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 320 512">
+                                        <path
+                                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
+                                    </svg>
+                                </li>
+                                <li class="flex items-center">
+                                    <a href="#">My academy</a>
+                                    <svg class="fill-current w-1 h-3 mx-2" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 320 512">
+                                        <path
+                                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
+                                    </svg>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500" aria-current="page">Compositing</a>
+                                </li>
+                            </ol>
+                        </nav>
+                        <!-- COURSE TITLE -->
+                        <h1 class="text-3xl text-black antialiased font-medium mt-1">Advanced pro compositing ideas</h1>
+                        <!-- COURSE BADGES -->
+                        <div class="badges flex mt-2">
+                            <div class="text-xs px-2 red-badge text-white rounded block antialiased font-bold mr-2">
+                                <small>PRO</small></div>
+                            <div class="text-xs px-2 green-badge text-white rounded block antialiased font-bold">
+                                <small>FREE</small></div>
+                        </div>
+                        <!-- COURSE AVATARS -->
+                        <div class="avatars mt-10 flex">
+                            <div class="mb-6 pr-5 h-10 flex items-center">
+                                <img class="rounded-full float-left h-full"
+                                    src="https://randomuser.me/api/portraits/men/1.jpg">
+                                <span class="ml-3 text-xs font-black antialiased text-black">
+                                    Aaron Nace
+                                </span>
+                            </div>
+                            <div class="mb-6 pr-5 h-10 flex items-center">
+                                <img class="rounded-full float-left h-full"
+                                    src="https://randomuser.me/api/portraits/men/7.jpg">
+                                <span class="ml-3 text-xs font-black antialiased text-black">
+                                    Josh Stackfold
+                                </span>
+                            </div>
+                            <div class="mb-6 pr-5 h-10 flex items-center">
+                                <img class="rounded-full float-left h-full"
+                                    src="https://randomuser.me/api/portraits/men/9.jpg">
+                                <span class="ml-3 text-xs font-black antialiased text-black">
+                                    Michael Bolard
+                                </span>
+                            </div>
+                        </div>
+                        <!-- COURSE PRICE -->
+                        <div class="price antialiased flex items-center">
+                            <h2 class="text-xl font-bold mr-2">&euro; 133.99</h2>
+                            <span><small class="text-xs orange-color font-semibold">75% Disc.
+                                    &euro;
+                                    178.65</small></span>
+                        </div>
+                        <!-- COURSE BUY BUTTON -->
+                        <button
+                            class="inline-flex items-center justify-center orange-bg border-0 py-2 px-10 w-64 focus:outline-none rounded mt-2 text-base text-white antialiased font-bold">
+                            <ion-icon name="cart-outline" class="mr-2"></ion-icon> BUY
+                            NOW
+                        </button>
+                        <!-- COURSE OFFER ENDS -->
+                        <div class="text-sm orange-color font-medium mt-2"><small class="flex items-center">
+                                <ion-icon name="time-outline" class="mr-1"></ion-icon> This offer ends in 3d, 20:35:32
+                            </small>
+                        </div>
+
+                        <!-- COURSE LIST DETAILS -->
+                        <div class="mt-5">
+                            <div class="flex h-full items-center">
+                                <ion-icon name="thumbs-up-outline" class="mr-2"></ion-icon>
+                                <span class="title-font font-medium"><small>98% Positive reviews (140)</small></span>
+                            </div>
+                        </div>
+                        <div class="mt-1">
+                            <div class="flex h-full items-center">
+                                <ion-icon name="people-outline" class="mr-2"></ion-icon>
+                                <span class="title-font font-medium"><small>4148 Students</small></span>
+                            </div>
+                        </div>
+                        <div class="mt-1">
+                            <div class="flex h-full items-center">
+                                <ion-icon name="newspaper-outline" class="mr-2"></ion-icon>
+                                <span class="title-font font-medium"><small>18 Lessons (4h 34m)</small></span>
+                            </div>
+                        </div>
+                        <div class="mt-1">
+                            <div class="flex h-full items-center">
+                                <ion-icon name="megaphone-outline" class="mr-2"></ion-icon>
+                                <span class="title-font font-medium"><small>ENGLISH | Available in these languages: |
+                                        ROMANIAN » | HUNGARIAN »</small></span>
+                            </div>
+                        </div>
+                        <div class="mt-1">
+                            <div class="flex h-full items-center">
+                                <ion-icon name="bar-chart-outline" class="mr-2"></ion-icon>
+                                <span class="title-font font-medium"><small>Level: BEGINNER</small></span>
+                            </div>
+                        </div>
+                        <div class="mt-1">
+                            <div class="flex h-full items-center">
+                                <ion-icon name="infinite-outline" class="mr-2"></ion-icon>
+                                <span class="title-font font-medium"><small>Unlimited access forever</small></span>
+                            </div>
+                        </div>
+
+                        <!-- COURSE GIFT BUTTON -->
+                        <button
+                            class="inline-flex items-center justify-center orange-color border-solid border orange-border-color py-2 px-10 w-64 focus:outline-none rounded mt-8 text-base text-white antialiased font-bold">
+                            <ion-icon name="gift-outline" class="mr-2"></ion-icon> BUY
+                            AS A GIFT
+                        </button>
+
+                        <!-- COURSE REDEEM CODE -->
+                        <div class="redeem mt-2 text-xs antialiased font-bold">
+                            Redeem the course with a gift code
+                        </div>
+
+                        <!-- COURSE SHARE -->
+                        <div class="social-share mt-8">
+                            <h2 class="font-extrabold antialiased mb-3">SHARE</h2>
+                            <div class="social-icons flex">
+                                <a href="#" target="blank_"
+                                    class="rounded orange-bg flex w-8 h-8 text-white items-center justify-center text-lg">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                                <a href="#" target="blank_"
+                                    class="rounded orange-bg flex w-8 h-8 text-white items-center justify-center text-lg ml-3">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                                <a href="#" target="blank_"
+                                    class="rounded orange-bg flex w-8 h-8 text-white items-center justify-center text-lg ml-3">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                                <a href="#" target="blank_"
+                                    class="rounded orange-bg flex w-8 h-8 text-white items-center justify-center text-lg ml-3">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div> <!-- .end courses right column-->
+
+                </div>
+            </div>
+        </section>
+
+        <section class="overview">
+            <h1 class="text-center text-5xl font-light antialiased mt-24 mb-4">Overview</h1>
+            <div class="container py-4 mx-auto flex flex-wrap custom-width">
+                <div class="flex flex-wrap w-full">
+                    <!-- SIDEBAR -->
+                    <div class="lg:w-9/12 md:w-1/2 md:pr-10">
+                        <p class="paragraph-color text-sm leading-snug">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit. Etiam
+                            finibus facilisis enim a interdum. Vestibulum eros dolor,
+                            luctus sed lectus et, ultrices auctor ante. Sed non vestibulum justo, et lacinia enim. Sed
+                            dapibus, lorem ut
+                            sollicitudin cursus, dolor nibh consectetur.</p>
+
+                        <img src="assets/img/article-img.png" class="mt-4" alt="Article Image">
+                        <div
+                            class="table-secondary text-xs pt-2 pb-2 pl-4 pr-4 leading-tight paragraph-color antialiased">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus facilisis enim a
+                            interdum. Vestibulum eros dolor,
+                            luctus sed lectus et, ultrices auctor ante. Sed non vestibulum justo, et lacinia enim. Sed
+                            dapibus, lorem ut
+                            sollicitudin cursus.
+
+                        </div>
+
+                        <p class="paragraph-color text-sm leading-snug mt-6 mb-6">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing
+                            elit. Etiam finibus facilisis enim a interdum. Vestibulum eros dolor,
+                            luctus sed lectus et, ultrices auctor ante. Sed non vestibulum justo, et lacinia enim. Sed
+                            dapibus, lorem ut
+                            sollicitudin cursus, dolor nibh consectetur mi, quis ultricies tortor est non ante.</p>
+
+                        <section>
+
+                            <div class="container py-4 mx-auto flex flex-wrap custom-width">
+                                <div class="flex flex-wrap w-full">
+                                    <div class="lg:w-5/12 md:w-1/2 md:pr-6">
+                                        <img src="assets/img/article-img-2.png"
+                                            class="h-full w-full object-cover object-left" alt="Article Image">
+                                        <div
+                                            class="table-secondary text-xs pt-2 pb-2 pl-3 pr-3 leading-tight paragraph-color block antialiased clear-both">
+                                            Lorem ipsum dolor sit amet, consectetur elit at adipiscing elit etim quis
+                                            ultricies tortor.
+                                        </div>
+                                    </div>
+                                    <div class="lg:w-7/12 md:w-1/2 md:pr-0">
+                                        <div class="section-content">
+                                            <div class="text-xl antialiased font-semibold paragraph-color">Lorem ipsum
+                                                dolor sit amet
+                                            </div>
+
+                                            <p class="paragraph-color text-sm leading-snug mt-4 mb-8">Consectetur
+                                                adipiscing
+                                                elit. Etiam finibus facilisis enim a interdum. Vestibulum eros dolor,
+                                                luctus
+                                                sed lectus et,
+                                                ultrices auctor ante. Sed non augue vestibulum justo, et lacinia enim.
+                                                Sed
+                                                dapibus, lorem ut sollicitudin cursus, dolor
+                                                nibh cons.</p>
+                                        </div>
+                                        <div class="section-content">
+                                            <div class="mt-2 text-xl antialiased font-semibold paragraph-color">Nunc vel
+                                                viverra sem
+                                            </div>
+
+                                            <p class="paragraph-color text-sm leading-snug mt-4 mb-6">Nullam cursus
+                                                dolor a
+                                                dolor vehicula, sit amet scelerisque diam pellentesque. Aenean et leo
+                                                nec
+                                                lacus hendrerit finibus
+                                                vel a sem. Nunc laoreet porta tortor, eu dapibus justo dapibus quis.
+                                                Nullam
+                                                interlibero augue et augue imperdiet condum
+                                                facilisis nisi, eget porttitor leo tempor in. Proin in orci non dui
+                                                mattis
+                                                interdum pretium sit amet justo.</p>
+                                        </div>
+                                        <div class="section-content">
+                                            <div class="mt-2 text-xl antialiased font-semibold paragraph-color">Mauris
+                                                ipem,
+                                                sagittis id nunc varius.
+                                            </div>
+
+                                            <p class="paragraph-color text-sm leading-snug mt-4">Scelerisque
+                                                ullamcorper magna. Maecenas interdum neque quis elit pellentesque
+                                                maximus.
+                                                Nullam lectus diam, fringilla
+                                                vitae accumsan et, faucibus vitae orci. Integer eget volutpat tortor.
+                                                Augue
+                                                aliquam vestibulum bibendum consequat.
+                                                Aliquam quis ultricies tortor non leo augue vitae ipsum mollis volutpat.
+                                                Integer nec faucibus pulvinar ligula, ut
+                                                iaculis elit. Aenean nec posuere</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="paragraph-color text-sm leading-snug mt-20 mb-6">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Etiam
+                                    finibus facilisis enim a interdum. Vestibulum eros dolor, luctus sed lectus et,
+                                    ultrices auctor ante. Sed non
+                                    vestibulum justo, et lacinia enim. Sed dapibus, lorem ut sollicitudin cursus, dolor
+                                    nibh consectetur mi, quis
+                                    ultricies tortor est non ante.<br /><br />
+
+                                    Nunc non tellus id velit sollicitudin rutrum. Praesent vitae urna condimentum,
+                                    tempus ipsum eu, sollicitudin lacus.
+                                    Nulla at rutrum mi. Cras pulvinar justo risus, nec ullamcorper odio cursus
+                                    vel.<br /><br />
+
+                                    Nunc vel viverra sem. Nullam cursus dolor a dolor vehicula, sit amet scelerisque
+                                    diam pellentesque. Aenean et leo
+                                    nec lacus hendrerit finibus vel a sem. Nunc laoreet porta tortor, eu dapibus justo
+                                    dapibus quis. Nullam interdum
+                                    facilisis nisi, eget porttitor leo tempor in. Proin in orci non dui mattis interdum
+                                    pretium sit amet justo. Mauris
+                                    ipsum sem, sagittis id nunc varius, scelerisque ullamcorper magna. </p>
+                            </div>
+
+                        </section>
+
+
+                    </div>
+
+
+                    <div class="lg:w-3/12 md:w-1/2 md:pr-0">
+                        <div class="ad w-full border text-center p-8">
+                            <h1 class="text-2xl antialiased font-medium mb-4 leading-7">Do you want <div
+                                    class="font-black">
+                                    more
+                                    traffic<span class="font-medium">?</span>
+                                </div>
+                            </h1>
+                            <p class="text-xs leading-4 font-semibold antialiased">Hey, I’m Neil Patel. I’m
+                                determined
+                                to make a business grow. My only
+                                question is, will it be yours?</p>
+                            <button
+                                class="inline-flex items-center justify-center orange-bg border-0 py-2 px-2 w-full focus:outline-none rounded mt-6 text-sm text-white antialiased font-bold">
+                                READ MORE
+                            </button>
+                        </div>
+
+                        <div class="right-sidebar w-full border p-4 mt-6">
+                            <div class="right-sidebar-title">
+                                <h1 class="text-xl font-extrabold antialiased mb-4">Domains</h1>
+                            </div>
+                            <div class="right-sidebar-items">
+                                <p class="text-xs font-medium antialiased mb-2">Dental aesthetics</p>
+                                <p class="text-xs font-medium antialiased mb-2">Dental Photography and Oral Radiology
+                                </p>
+                                <p class="text-xs font-medium antialiased mb-2 orange-color">Dental technique</p>
+                                <p class="text-xs font-medium antialiased mb-2">Digital Dentistry</p>
+                                <p class="text-xs font-medium antialiased mb-2">Endodontics</p>
+                                <p class="text-xs font-medium antialiased mb-2">Facial aesthetics</p>
+                                <p class="text-xs font-medium antialiased mb-2">General dentistry</p>
+                                <p class="text-xs font-medium antialiased mb-2">Oral and Maxillofacial Surgery |
+                                    Implantology</p>
+                                <p class="text-xs font-medium antialiased mb-2">Orthodontics</p>
+                                <p class="text-xs font-medium antialiased mb-2">Pediatric dentistry</p>
+                                <p class="text-xs font-medium antialiased mb-2">Periodontics</p>
+                                <p class="text-xs font-medium antialiased mb-2">Personal development I Business
+                                    Administration</p>
+                                <p class="text-xs font-medium antialiased mb-2">Prosthodontics</p>
+                                <p class="text-xs font-medium antialiased mb-2">Restorative dentistry</p>
+                            </div>
+                        </div>
+
+                        <div class="right-sidebar w-full border mt-6">
+                            <div class="p-4">
+                                <div class="mb-2 h-8 flex items-center">
+                                    <img class="rounded-full float-left h-full" src="assets/img/domestika.png">
+                                    <span class="ml-3 text-xs font-black antialiased text-black sponsored">
+                                        <p class="text-sm antialiased m-0">Domestika</p>
+                                        <p class="m-0 text-xs antialiased sponsored-color font-semibold">
+                                            <small>Sponsorizat</small></p>
+                                    </span>
+                                </div>
+
+                                <p class="text-xs leading-4 antialiased">Set your imagination free. Lorem ipsum un
+                                    non tellus id velit solli praesent vitae.</p>
+                            </div>
+                            <img src="assets/img/domImg.png" class="w-full" alt="Sponsored Image">
+                            <div class="p-4">
+                                <div class="buy-add flex items-center justify-between">
+                                    <p class="text-xs"><small>DOMESTIKA.ORG</small></p>
+                                    <button
+                                        class="inline-flex items-center orange-bg border-0 py-1 px-3 focus:outline-none rounded md:mt-0 text-xs ml-3 text-white antialiased font-bold"><small>BUY
+                                            NOW</small>
+                                    </button>
+                                </div>
+                                <div class="mt-2 text-sm antialiased font-black">3-COURSE BUNDLE | 30% OFF</div>
+                                <p class="text-xs leading-4 antialiased mt-1">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit etiam.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="overview">
+            <h1 class="text-center text-5xl font-light antialiased mt-2 mb-4">Class Instructor</h1>
+            <div class="instructor-card table-secondary p-6 mb-1">
+                <div class="container py-4 mx-auto flex flex-wrap custom-width justify-center">
+                    <div class="instructors w-3/5">
+                        <div class="pr-5  flex items-start">
+                            <img class="rounded-full float-left h-20 mr-6"
+                                src="https://randomuser.me/api/portraits/men/1.jpg">
+                            <div class="instructor-details flex flex-col">
+                                <span class="text-3xl font-light antialiased">
+                                    Aaron Nace
+                                </span>
+                                <span class="text-xs font-medium antialiased">
+                                    ACADEMY FOUNDER – CLASS INSTRUCTOR
+                                </span>
+                                <span class="paragraph-color text-xs mt-4 leading-snug">
+                                    Aaron Nace is a photographer, Photoshop artist and founder of PHLEARN.
+                                    He is the #1 Photoshop instructor in the world with millions of YouTube subscribers.
+                                </span>
+
+                                <a href="#" class="orange-color mt-4 text-sm">View More Classes by Aaron Nace</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="instructor-card table-secondary p-6 mb-1">
+                <div class="container py-4 mx-auto flex flex-wrap custom-width justify-center">
+                    <div class="instructors w-3/5">
+                        <div class="pr-5  flex items-start">
+                            <img class="rounded-full float-left h-20 mr-6"
+                                src="https://randomuser.me/api/portraits/men/7.jpg">
+                            <div class="instructor-details flex flex-col">
+                                <span class="text-3xl font-light antialiased">
+                                    John Stackfold
+                                </span>
+                                <span class="text-xs font-medium antialiased">
+                                    ACADEMY FOUNDER – CLASS INSTRUCTOR
+                                </span>
+                                <span class="paragraph-color text-xs mt-4 leading-snug">
+                                    Aaron Nace is a photographer, Photoshop artist and founder of PHLEARN.
+                                    He is the #1 Photoshop instructor in the world with millions of YouTube subscribers.
+                                </span>
+
+                                <a href="#" class="orange-color mt-4 text-sm">View More Classes by John Stackfold</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="instructor-card table-secondary p-6 mb-1">
+                <div class="container py-4 mx-auto flex flex-wrap custom-width justify-center">
+                    <div class="instructors w-3/5">
+                        <div class="pr-5  flex items-start">
+                            <img class="rounded-full float-left h-20 mr-6"
+                                src="https://randomuser.me/api/portraits/men/9.jpg">
+                            <div class="instructor-details flex flex-col">
+                                <span class="text-3xl font-light antialiased">
+                                    Michael Bolard
+                                </span>
+                                <span class="text-xs font-medium antialiased">
+                                    ACADEMY FOUNDER – CLASS INSTRUCTOR
+                                </span>
+                                <span class="paragraph-color text-xs mt-4 leading-snug">
+                                    Aaron Nace is a photographer, Photoshop artist and founder of PHLEARN.
+                                    He is the #1 Photoshop instructor in the world with millions of YouTube subscribers.
+                                </span>
+
+                                <a href="#" class="orange-color mt-4 text-sm">View More Classes by Michael Bolard</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="more-courses mt-10">
+            <div class="container py-4 mx-auto custom-width justify-center">
+
+                <div class="similar-courses-title similar-courses-color text-xs font-bold antialiased mb-8"><span
+                        class="p-2">SIMILAR
+                        COURSES</span>
+                </div>
+
+                <div class="course-card mb-1">
+                    <div class="container py-4 mx-auto flex flex-wrap custom-width justify-center">
+
+
+                        <div class="grid grid-cols-5 gap-4">
+                            <div class="course-card">
+                                <div class="h-40 overflow-hidden w-full relative">
+                                    <img alt="content" class="object-cover object-center h-full w-full"
+                                        src="assets/img/course.png">
+                                    <div
+                                        class="text-xs px-2 red-badge text-white rounded block antialiased font-bold mr-2 absolute course-badge">
+                                        <small>PRO</small></div>
+                                </div>
+
+                                <p class="text-xs leading-snug p-2 orange-color antialiased font-bold">Lorem ipsum
+                                    dolor
+                                    siteus ametus ons ecta adipile.
+                                </p>
+                            </div>
+                            <div class="course-card">
+                                <div class="h-40 overflow-hidden w-full relative">
+                                    <img alt="content" class="object-cover object-center h-full w-full"
+                                        src="assets/img/course.png">
+                                    <div
+                                        class="text-xs px-2 red-badge text-white rounded block antialiased font-bold mr-2 absolute course-badge">
+                                        <small>PRO</small></div>
+                                </div>
+
+                                <p class="text-xs leading-snug p-2 similar-courses-text antialiased font-bold">Lorem
+                                    ipsum
+                                    dolor
+                                    siteus ametus ons ecta adipile.
+                                </p>
+                            </div>
+                            <div class="course-card">
+                                <div class="h-40 overflow-hidden w-full relative">
+                                    <img alt="content" class="object-cover object-center h-full w-full"
+                                        src="assets/img/course.png">
+                                    <div
+                                        class="text-xs px-2 green-badge text-white rounded block antialiased font-bold mr-2 absolute course-badge">
+                                        <small>FREE</small></div>
+                                </div>
+
+                                <p class="text-xs leading-snug p-2 similar-courses-text antialiased font-bold">Lorem
+                                    ipsum
+                                    dolor
+                                    siteus ametus ons ecta adipile.
+                                </p>
+                            </div>
+                            <div class="course-card">
+                                <div class="h-40 overflow-hidden w-full relative">
+                                    <img alt="content" class="object-cover object-center h-full w-full"
+                                        src="assets/img/course.png">
+                                    <div
+                                        class="text-xs px-2 red-badge text-white rounded block antialiased font-bold mr-2 absolute course-badge">
+                                        <small>PRO</small></div>
+                                </div>
+
+                                <p class="text-xs leading-snug p-2 similar-courses-text antialiased font-bold">Lorem
+                                    ipsum
+                                    dolor
+                                    siteus ametus ons ecta adipile.
+                                </p>
+                            </div>
+                            <div class="course-card">
+                                <div class="h-40 overflow-hidden w-full relative">
+                                    <img alt="content" class="object-cover object-center h-full w-full"
+                                        src="assets/img/course.png">
+                                    <div
+                                        class="text-xs px-2 green-badge text-white rounded block antialiased font-bold mr-2 absolute course-badge">
+                                        <small>FREE</small></div>
+                                </div>
+
+                                <p class="text-xs leading-snug p-2 similar-courses-text antialiased font-bold">Lorem
+                                    ipsum
+                                    dolor
+                                    siteus ametus ons ecta adipile.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+</body>
+
+</html>

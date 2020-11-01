@@ -1,0 +1,16 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="0.423cm" height="0.423cm">
+<defs>
+<filter id="Filter_0">
+    <feFlood flood-color="rgb(255, 82, 72)" flood-opacity="1" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+    <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+</filter>
+
+</defs>
+<g filter="url(#Filter_0)">
+<text kerning="auto" font-family="Pe" fill="rgb(255, 255, 255)" transform="matrix( 0.30154766404286, 0, 0, 0.30081634807595,2.57562472712937, 10.8375781015834)" font-size="46.54px">&#58987;</text>
+</g>
+</svg>

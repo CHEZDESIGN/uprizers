@@ -1,0 +1,15 @@
+{
+  "name": "app-risers",
+  "version": "1.0.0",
+  "description": "App Risers",
+  "main": "tailwind.js",
+  "dependencies": {
+    "tailwindcss": "^1.9.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "chez"
+  },
+  "author": "Chez",
+  "license": "ISC"
+}
