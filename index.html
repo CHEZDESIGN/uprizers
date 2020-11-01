@@ -40,33 +40,37 @@
 
     <!-- HEADER -->
     <header class="text-white header">
-        <div class="container mx-auto flex justify-center">
-            <iframe src="https://player.vimeo.com/video/271002771?title=0&byline=0&portrait=0" width="1067" height="600"
-                frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="container mx-auto flex justify-center iframe-container">
+            <iframe src="https://player.vimeo.com/video/271002771?title=0&byline=0&portrait=0" class="responsive-iframe"
+                width="1067" height="600" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
     </header>
     <!-- COURSE TABS -->
     <section
         class="text-black body-font border-solid border-t-0 border-l-0 border-r-0 border-b border-gray-300 block sticky top-0 z-10 bg-white stick">
         <div
-            class="container mx-auto flex flex-wrap p-4 sm:pt-4 sm:pb-4 sm:pl-0 sm:pr-0 sm:flex-row md:flex-row items-center justify-between custom-width sm:w-full">
-            <div class="hidden flex-wrap items-center text-xs font-bold antialiased sm:flex">
+            class="container mx-auto flex flex-wrap p-4 lg:pl-0 lg:pr-0 sm:pt-4 sm:pb-4 sm:flex-row md:flex-row items-center justify-between custom-width sm:w-full">
+            <div class="hidden md:flex flex-wrap items-center text-xs font-bold antialiased">
                 <a class="mr-5 hover:text-gray-900 orange-color">VIDEO</a>
                 <a class="mr-5 hover:text-gray-900">OVERVIEW</a>
                 <a class="mr-5 hover:text-gray-900">DESCRIPTION</a>
                 <a class="mr-5 over:text-gray-900">CLASS INSTRUCTOR</a>
                 <a class="mr-5 hover:text-gray-900">SIMILAR</a>
-                <a class="mr-5 hover:text-gray-900">Q&amp;A </a>
+                <a class="mr-5 hover:text-gray-900">Q&amp;A</a>
                 <a class="hover:text-gray-900">REVIEWS</a>
             </div>
 
-            <div class="relative sm:hidden">
+            <div class="relative md:hidden">
                 <select
                     class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="grid-state">
-                    <option>New Mexico</option>
-                    <option>Missouri</option>
-                    <option>Texas</option>
+                    <option>VIDEO</option>
+                    <option>OVERVIEW</option>
+                    <option>DESCRIPTION</option>
+                    <option>CLASS INSTRUCTOR</option>
+                    <option>SIMILAR</option>
+                    <option>Q&amp;A</option>
+                    <option>REVIEWS</option>
                 </select>
                 <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -76,7 +80,7 @@
 
             <div class="inline-flex lg:justify-end ml-5 lg:ml-0">
                 <button
-                    class="inline-flex items-center orange-bg border-0 py-1 px-3 focus:outline-none rounded sm:mt-4 md:mt-0 text-xs ml-3 text-white antialiased font-bold">BUY
+                    class="inline-flex items-center orange-bg border-0 py-3 px-8 focus:outline-none rounded md:px-3 md:py-1 md:mt-0 text-xs text-white antialiased font-bold">BUY
                     NOW
                 </button>
             </div>
@@ -88,7 +92,7 @@
             <div class="container py-4 mx-auto flex flex-wrap custom-width">
                 <div class="flex flex-wrap w-full">
                     <!-- SIDEBAR -->
-                    <div class="lg:w-5/12 md:w-1/2 md:pr-10 order-last sm:order-first">
+                    <div class="lg:w-5/12 md:w-1/2 sm:w-full md:pr-10 order-last md:order-first">
                         <div
                             class="flex relative table-of-contents pt-2 pb-2 pl-4 pr-4 text-sm font-bold text-black antialiased">
                             TABLE OF CONTENTS
@@ -236,8 +240,8 @@
                         </div>
                     </div><!-- .end courses left column-->
                     <!-- BREADCRUMB -->
-                    <div class="lg:w-7/12 md:w-1/2 md:mt-0 order-first sm:order-last">
-                        <nav class="text-black font-bold text-xs antialiased breadcrumb-color" aria-label="Breadcrumb">
+                    <div class="lg:w-7/12 md:w-1/2 md:mt-0 order-first md:order-last mb-8 md:mb-0">
+                        <div class="text-black font-bold text-xs antialiased breadcrumb-color" aria-label="Breadcrumb">
                             <ol class="list-none p-0 inline-flex">
                                 <li class="flex items-center">
                                     <a href="#">All classes</a>
@@ -259,9 +263,10 @@
                                     <a href="#" class="text-gray-500" aria-current="page">Compositing</a>
                                 </li>
                             </ol>
-                        </nav>
+                        </div>
                         <!-- COURSE TITLE -->
-                        <h1 class="text-3xl text-black antialiased font-medium mt-1">Advanced pro compositing ideas</h1>
+                        <h1 class="text-xl sm:text-3xl text-black antialiased font-medium mt-1">Advanced pro compositing
+                            ideas</h1>
                         <!-- COURSE BADGES -->
                         <div class="badges flex mt-2">
                             <div class="text-xs px-2 red-badge text-white rounded block antialiased font-bold mr-2">
@@ -302,7 +307,7 @@
                         </div>
                         <!-- COURSE BUY BUTTON -->
                         <button
-                            class="inline-flex items-center justify-center orange-bg border-0 py-2 px-10 w-64 focus:outline-none rounded mt-2 text-base text-white antialiased font-bold">
+                            class="flex items-center justify-center orange-bg border-0 py-2 px-10 w-42 sm:w-64 focus:outline-none rounded mt-2 text-base text-white antialiased font-bold">
                             <ion-icon name="cart-outline" class="mr-2"></ion-icon> BUY
                             NOW
                         </button>
@@ -353,7 +358,7 @@
 
                         <!-- COURSE GIFT BUTTON -->
                         <button
-                            class="inline-flex items-center justify-center orange-color border-solid border orange-border-color py-2 px-10 w-64 focus:outline-none rounded mt-8 text-base text-white antialiased font-bold">
+                            class="inline-flex items-center justify-center orange-color border-solid border orange-border-color py-2 px-10 w-42 sm:w-64 focus:outline-none rounded mt-8 text-base text-white antialiased font-bold">
                             <ion-icon name="gift-outline" class="mr-2"></ion-icon> BUY
                             AS A GIFT
                         </button>
@@ -518,7 +523,7 @@
                     </div>
 
 
-                    <div class="lg:w-3/12 md:w-1/2 md:pr-0">
+                    <div class="lg:w-3/12 md:w-1/2 md:pr-0 w-full">
                         <div class="ad w-full border text-center p-8">
                             <h1 class="text-2xl antialiased font-medium mb-4 leading-7">Do you want <div
                                     class="font-black">
@@ -601,7 +606,7 @@
             <h1 class="text-center text-5xl font-light antialiased mt-2 mb-4">Class Instructor</h1>
             <div class="instructor-card table-secondary p-6 mb-1">
                 <div class="container py-4 mx-auto flex flex-wrap custom-width justify-center">
-                    <div class="instructors w-3/5">
+                    <div class="instructors lg:w-3/5 md:w-full">
                         <div class="pr-5  flex items-start">
                             <img class="rounded-full float-left h-20 mr-6"
                                 src="https://randomuser.me/api/portraits/men/1.jpg">
@@ -625,7 +630,7 @@
             </div>
             <div class="instructor-card table-secondary p-6 mb-1">
                 <div class="container py-4 mx-auto flex flex-wrap custom-width justify-center">
-                    <div class="instructors w-3/5">
+                    <div class="instructors lg:w-3/5 md:w-full">
                         <div class="pr-5  flex items-start">
                             <img class="rounded-full float-left h-20 mr-6"
                                 src="https://randomuser.me/api/portraits/men/7.jpg">
@@ -649,7 +654,7 @@
             </div>
             <div class="instructor-card table-secondary p-6 mb-1">
                 <div class="container py-4 mx-auto flex flex-wrap custom-width justify-center">
-                    <div class="instructors w-3/5">
+                    <div class="instructors lg:w-3/5 md:w-full">
                         <div class="pr-5  flex items-start">
                             <img class="rounded-full float-left h-20 mr-6"
                                 src="https://randomuser.me/api/portraits/men/9.jpg">
@@ -676,8 +681,9 @@
         <section class="more-courses mt-10">
             <div class="container py-4 mx-auto custom-width justify-center">
 
-                <div class="similar-courses-title similar-courses-color text-xs font-bold antialiased mb-8"><span
-                        class="p-2">SIMILAR
+                <div
+                    class="similar-courses-title sm:text-center similar-courses-color text-xs font-bold antialiased mb-8">
+                    <span class="p-2">SIMILAR
                         COURSES</span>
                 </div>
 
@@ -685,7 +691,7 @@
                     <div class="container py-4 mx-auto flex flex-wrap custom-width justify-center">
 
 
-                        <div class="grid grid-cols-5 gap-4">
+                        <div class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3  gap-4">
                             <div class="course-card">
                                 <div class="h-40 overflow-hidden w-full relative">
                                     <img alt="content" class="object-cover object-center h-full w-full"
