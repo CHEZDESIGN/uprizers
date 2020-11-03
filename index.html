@@ -10,7 +10,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body class="bg-white">
@@ -37,40 +36,40 @@
             </nav>
         </div>
     </div> -->
-
     <!-- HEADER -->
-    <header class="text-white header">
+    <div class="text-white header">
         <div class="container mx-auto flex justify-center iframe-container">
             <iframe src="https://player.vimeo.com/video/271002771?title=0&byline=0&portrait=0" class="responsive-iframe"
                 width="1067" height="600" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
-    </header>
+    </div>
+    <div id="nav-container-top"></div>
     <!-- COURSE TABS -->
-    <section
-        class="text-black body-font border-solid border-t-0 border-l-0 border-r-0 border-b border-gray-300 block sticky top-0 z-10 bg-white stick">
+    <section id="nav-container"
+        class="text-black body-font border-solid border-t-0 border-l-0 border-r-0 border-b border-gray-300 block z-10 bg-white stick">
         <div
             class="container mx-auto flex flex-wrap p-4 lg:pl-0 lg:pr-0 sm:pt-4 sm:pb-4 sm:flex-row md:flex-row items-center justify-between custom-width sm:w-full">
             <div class="hidden md:flex flex-wrap items-center text-xs font-bold antialiased">
-                <a class="mr-5 hover:text-gray-900 orange-color">VIDEO</a>
-                <a class="mr-5 hover:text-gray-900">OVERVIEW</a>
-                <a class="mr-5 hover:text-gray-900">DESCRIPTION</a>
-                <a class="mr-5 over:text-gray-900">CLASS INSTRUCTOR</a>
-                <a class="mr-5 hover:text-gray-900">SIMILAR</a>
-                <a class="mr-5 hover:text-gray-900">Q&amp;A</a>
-                <a class="hover:text-gray-900">REVIEWS</a>
+                <a href="#" class="mr-5 hover:text-gray-900 orange-color">Video</a>
+                <a href="#" class="mr-5 hover:text-gray-900">Overview</a>
+                <a href="#" class="mr-5 hover:text-gray-900">Description</a>
+                <a href="#" class="mr-5 over:text-gray-900">Class instructor</a>
+                <a href="#" class="mr-5 hover:text-gray-900">Similar</a>
+                <a href="#" class="mr-5 hover:text-gray-900">Q&amp;A</a>
+                <a href="#" class="hover:text-gray-900">Reviews</a>
             </div>
 
-            <div class="relative md:hidden">
+            <div class="relative md:hidden w-32">
                 <select
                     class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="grid-state">
-                    <option>VIDEO</option>
-                    <option>OVERVIEW</option>
-                    <option>DESCRIPTION</option>
-                    <option>CLASS INSTRUCTOR</option>
-                    <option>SIMILAR</option>
+                    <option>Video</option>
+                    <option>Overview</option>
+                    <option>Description</option>
+                    <option>Class instructor</option>
+                    <option>Similar</option>
                     <option>Q&amp;A</option>
-                    <option>REVIEWS</option>
+                    <option>Reviews</option>
                 </select>
                 <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -78,11 +77,11 @@
                 </div>
             </div>
 
-            <div class="inline-flex lg:justify-end ml-5 lg:ml-0">
-                <button
+            <div class="inline-flex lg:justify-end lg:ml-0">
+                <a href="#"
                     class="inline-flex items-center orange-bg border-0 py-3 px-8 focus:outline-none rounded md:px-3 md:py-1 md:mt-0 text-xs text-white antialiased font-bold">BUY
                     NOW
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -98,7 +97,7 @@
                             TABLE OF CONTENTS
                         </div>
                         <div
-                            class="chapter relative table-secondary p-6 font-bold text-black antialiased sidebar-height overflow-auto">
+                            class="chapter relative table-secondary p-6 font-bold text-black antialiased sidebar-height sidebar-height-sm overflow-auto">
                             <!-- <div
                             class="absolute top-0 left-0 right-0 bottom-0 z-20 bg-gradient-to-b from-transparent via-transparent to-white">
                         </div> -->
@@ -107,10 +106,12 @@
                             <!-- CHAPTER ITEM -->
                             <div class="chapter-item antialiased flex flex-col">
                                 <div class="flex items-center justify-between">
-                                    <div class="icon-title flex items-center text-base">
-                                        <ion-icon name="play-outline" class="mr-2 text-2xl"></ion-icon>
-                                        <h2>01 - What You’ll Learn</h2>
-                                    </div>
+                                    <a href="#">
+                                        <div class="icon-title flex items-center text-base">
+                                            <ion-icon name="play-outline" class="mr-2 text-2xl"></ion-icon>
+                                            <h2>01 - What You’ll Learn</h2>
+                                        </div>
+                                    </a>
                                     <div class="time text-xs">
                                         <small>3:24m</small>
                                     </div>
@@ -127,11 +128,13 @@
                             <!-- CHAPTER ITEM -->
                             <div class="chapter-item antialiased flex flex-col mt-5">
                                 <div class="flex items-center justify-between">
-                                    <div class="icon-title flex items-center text-base">
-                                        <ion-icon name="play-outline" class="mr-2 text-2xl orange-color leading-4">
-                                        </ion-icon>
-                                        <h2 class="orange-color">02 - Advanced pro compositing ideas</h2>
-                                    </div>
+                                    <a href="#">
+                                        <div class="icon-title flex items-center text-base">
+                                            <ion-icon name="play-outline" class="mr-2 text-2xl orange-color leading-4">
+                                            </ion-icon>
+                                            <h2 class="orange-color">02 - Advanced pro compositing ideas</h2>
+                                        </div>
+                                    </a>
                                     <div class="time text-xs">
                                         <small>4:45m</small>
                                     </div>
@@ -152,10 +155,12 @@
                             <!-- CHAPTER ITEM -->
                             <div class="chapter-item antialiased flex flex-col">
                                 <div class="flex items-center justify-between">
-                                    <div class="icon-title flex items-center text-base">
-                                        <ion-icon name="download-outline" class="mr-2 text-2xl"></ion-icon>
-                                        <h2>01 - Example documents for use</h2>
-                                    </div>
+                                    <a href="#">
+                                        <div class="icon-title flex items-center text-base">
+                                            <ion-icon name="download-outline" class="mr-2 text-2xl"></ion-icon>
+                                            <h2>01 - Example documents for use</h2>
+                                        </div>
+                                    </a>
                                     <div class="time text-xs">
                                         <small>31MB</small>
                                     </div>
@@ -173,11 +178,13 @@
                             <!-- CHAPTER ITEM -->
                             <div class="chapter-item antialiased flex flex-col mt-5">
                                 <div class="flex items-center justify-between">
-                                    <div class="icon-title flex items-center text-base">
-                                        <ion-icon name="play-outline" class="mr-2 text-2xl leading-4">
-                                        </ion-icon>
-                                        <h2>02 - Best course ever</h2>
-                                    </div>
+                                    <a href="#">
+                                        <div class="icon-title flex items-center text-base">
+                                            <ion-icon name="play-outline" class="mr-2 text-2xl leading-4">
+                                            </ion-icon>
+                                            <h2>02 - Best course ever</h2>
+                                        </div>
+                                    </a>
                                     <div class="time text-xs">
                                         <small>2:41m</small>
                                     </div>
@@ -195,11 +202,13 @@
                             <!-- CHAPTER ITEM -->
                             <div class="chapter-item antialiased flex flex-col mt-5">
                                 <div class="flex items-center justify-between">
-                                    <div class="icon-title flex items-center text-base">
-                                        <ion-icon name="lock-closed-outline" class="mr-2 text-2xl leading-4">
-                                        </ion-icon>
-                                        <h2>03 - The secret part of this course</h2>
-                                    </div>
+                                    <a href="#">
+                                        <div class="icon-title flex items-center text-base">
+                                            <ion-icon name="lock-closed-outline" class="mr-2 text-2xl leading-4">
+                                            </ion-icon>
+                                            <h2>03 - The secret part of this course</h2>
+                                        </div>
+                                    </a>
                                     <div class="time text-xs">
                                         <small>14:28m</small>
                                     </div>
@@ -218,11 +227,13 @@
                             <!-- CHAPTER ITEM -->
                             <div class="chapter-item antialiased flex flex-col mt-5">
                                 <div class="flex items-center justify-between">
-                                    <div class="icon-title flex items-center text-base">
-                                        <ion-icon name="play-outline" class="mr-2 text-2xl leading-4">
-                                        </ion-icon>
-                                        <h2>04 - Now or never</h2>
-                                    </div>
+                                    <a href="#">
+                                        <div class="icon-title flex items-center text-base">
+                                            <ion-icon name="play-outline" class="mr-2 text-2xl leading-4">
+                                            </ion-icon>
+                                            <h2>04 - Now or never</h2>
+                                        </div>
+                                    </a>
                                     <div class="time text-xs">
                                         <small>4:43m</small>
                                     </div>
@@ -276,27 +287,27 @@
                         </div>
                         <!-- COURSE AVATARS -->
                         <div class="avatars mt-10 flex">
-                            <div class="mb-6 pr-5 h-10 flex items-center">
+                            <a href="#" class="mb-6 pr-5 h-10 flex items-center">
                                 <img class="rounded-full float-left h-full"
                                     src="https://randomuser.me/api/portraits/men/1.jpg">
                                 <span class="ml-3 text-xs font-black antialiased text-black">
                                     Aaron Nace
                                 </span>
-                            </div>
-                            <div class="mb-6 pr-5 h-10 flex items-center">
+                            </a>
+                            <a href="#" class="mb-6 pr-5 h-10 flex items-center">
                                 <img class="rounded-full float-left h-full"
                                     src="https://randomuser.me/api/portraits/men/7.jpg">
                                 <span class="ml-3 text-xs font-black antialiased text-black">
                                     Josh Stackfold
                                 </span>
-                            </div>
-                            <div class="mb-6 pr-5 h-10 flex items-center">
+                            </a>
+                            <a href="#" class="mb-6 pr-5 h-10 flex items-center">
                                 <img class="rounded-full float-left h-full"
                                     src="https://randomuser.me/api/portraits/men/9.jpg">
                                 <span class="ml-3 text-xs font-black antialiased text-black">
                                     Michael Bolard
                                 </span>
-                            </div>
+                            </a>
                         </div>
                         <!-- COURSE PRICE -->
                         <div class="price antialiased flex items-center">
@@ -306,11 +317,11 @@
                                     178.65</small></span>
                         </div>
                         <!-- COURSE BUY BUTTON -->
-                        <button
-                            class="flex items-center justify-center orange-bg border-0 py-2 px-10 w-42 sm:w-64 focus:outline-none rounded mt-2 text-base text-white antialiased font-bold">
+                        <a href="#"
+                            class="flex items-center justify-center orange-bg border-0 py-2 px-10 w-48 sm:w-64 focus:outline-none rounded mt-2 text-base text-white antialiased font-bold">
                             <ion-icon name="cart-outline" class="mr-2"></ion-icon> BUY
                             NOW
-                        </button>
+                        </a>
                         <!-- COURSE OFFER ENDS -->
                         <div class="text-sm orange-color font-medium mt-2"><small class="flex items-center">
                                 <ion-icon name="time-outline" class="mr-1"></ion-icon> This offer ends in 3d, 20:35:32
@@ -357,16 +368,16 @@
                         </div>
 
                         <!-- COURSE GIFT BUTTON -->
-                        <button
+                        <a href="#"
                             class="inline-flex items-center justify-center orange-color border-solid border orange-border-color py-2 px-10 w-42 sm:w-64 focus:outline-none rounded mt-8 text-base text-white antialiased font-bold">
                             <ion-icon name="gift-outline" class="mr-2"></ion-icon> BUY
                             AS A GIFT
-                        </button>
+                        </a>
 
                         <!-- COURSE REDEEM CODE -->
-                        <div class="redeem mt-2 text-xs antialiased font-bold">
+                        <a href="#" class="redeem mt-2 text-xs antialiased font-bold block">
                             Redeem the course with a gift code
-                        </div>
+                        </a>
 
                         <!-- COURSE SHARE -->
                         <div class="social-share mt-8">
@@ -398,7 +409,7 @@
         </section>
 
         <section class="overview">
-            <h1 class="text-center text-5xl font-light antialiased mt-24 mb-4">Overview</h1>
+            <h1 class="text-center text-4xl font-light antialiased mt-10 md:mt-24 mb-4 md:text-5xl">Overview</h1>
             <div class="container py-4 mx-auto flex flex-wrap custom-width">
                 <div class="flex flex-wrap w-full">
                     <!-- SIDEBAR -->
@@ -444,7 +455,7 @@
                                         </div>
                                     </div>
                                     <div class="lg:w-7/12 md:w-1/2 md:pr-0">
-                                        <div class="section-content">
+                                        <div class="section-content mt-20 sm:mt-0 md:mt-0 lg:mt-0 xl:mt-0">
                                             <div class="text-xl antialiased font-semibold paragraph-color">Lorem ipsum
                                                 dolor sit amet
                                             </div>
@@ -525,6 +536,7 @@
 
                     <div class="lg:w-3/12 md:w-1/2 md:pr-0 w-full">
                         <div class="ad w-full border text-center p-8">
+                            <div class="orange-bg h-1 w-8 mx-auto mb-2"></div>
                             <h1 class="text-2xl antialiased font-medium mb-4 leading-7">Do you want <div
                                     class="font-black">
                                     more
@@ -546,50 +558,88 @@
                                 <h1 class="text-xl font-extrabold antialiased mb-4">Domains</h1>
                             </div>
                             <div class="right-sidebar-items">
-                                <p class="text-xs font-medium antialiased mb-2">Dental aesthetics</p>
-                                <p class="text-xs font-medium antialiased mb-2">Dental Photography and Oral Radiology
-                                </p>
-                                <p class="text-xs font-medium antialiased mb-2 orange-color">Dental technique</p>
-                                <p class="text-xs font-medium antialiased mb-2">Digital Dentistry</p>
-                                <p class="text-xs font-medium antialiased mb-2">Endodontics</p>
-                                <p class="text-xs font-medium antialiased mb-2">Facial aesthetics</p>
-                                <p class="text-xs font-medium antialiased mb-2">General dentistry</p>
-                                <p class="text-xs font-medium antialiased mb-2">Oral and Maxillofacial Surgery |
-                                    Implantology</p>
-                                <p class="text-xs font-medium antialiased mb-2">Orthodontics</p>
-                                <p class="text-xs font-medium antialiased mb-2">Pediatric dentistry</p>
-                                <p class="text-xs font-medium antialiased mb-2">Periodontics</p>
-                                <p class="text-xs font-medium antialiased mb-2">Personal development I Business
-                                    Administration</p>
-                                <p class="text-xs font-medium antialiased mb-2">Prosthodontics</p>
-                                <p class="text-xs font-medium antialiased mb-2">Restorative dentistry</p>
+                                <ul>
+                                    <li><a href="#" class="text-xs font-medium antialiased mb-2 block">Dental
+                                            aesthetics</a></li>
+                                    <li><a href="#" class="text-xs font-medium antialiased mb-2 block">Dental
+                                            Photography and
+                                            Oral
+                                            Radiology
+                                        </a></li>
+                                    <li>
+                                        <a href="#" class="text-xs font-medium antialiased mb-2 orange-color">Dental
+                                            technique
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-xs font-medium antialiased mb-2">Digital Dentistry</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-xs font-medium antialiased mb-2">Endodontics</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-xs font-medium antialiased mb-2">Facial aesthetics</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-xs font-medium antialiased mb-2">General dentistry</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-xs font-medium antialiased mb-2">Oral and Maxillofacial
+                                            Surgery |
+                                            Implantology</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-xs font-medium antialiased mb-2">Orthodontics</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-xs font-medium antialiased mb-2">Pediatric dentistry</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-xs font-medium antialiased mb-2">Periodontics</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-xs font-medium antialiased mb-2">Personal development I
+                                            Business
+                                            Administration</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-xs font-medium antialiased mb-2">Prosthodontics</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-xs font-medium antialiased mb-2">Restorative dentistry
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 
                         <div class="right-sidebar w-full border mt-6">
                             <div class="p-4">
                                 <div class="mb-2 h-8 flex items-center">
+
                                     <img class="rounded-full float-left h-full" src="assets/img/domestika.png">
                                     <span class="ml-3 text-xs font-black antialiased text-black sponsored">
-                                        <p class="text-sm antialiased m-0">Domestika</p>
+                                        <a href="#" class="text-sm antialiased m-0">Domestika</a>
                                         <p class="m-0 text-xs antialiased sponsored-color font-semibold">
                                             <small>Sponsorizat</small></p>
                                     </span>
+
                                 </div>
 
                                 <p class="text-xs leading-4 antialiased">Set your imagination free. Lorem ipsum un
                                     non tellus id velit solli praesent vitae.</p>
                             </div>
-                            <img src="assets/img/domImg.png" class="w-full" alt="Sponsored Image">
+                            <a href="#"><img src="assets/img/domImg.png" class="w-full" alt="Sponsored Image"></a>
                             <div class="p-4">
                                 <div class="buy-add flex items-center justify-between">
-                                    <p class="text-xs"><small>DOMESTIKA.ORG</small></p>
-                                    <button
+                                    <a href="#" class="text-xs block"><small>DOMESTIKA.ORG</small></a>
+                                    <a href=""
                                         class="inline-flex items-center orange-bg border-0 py-1 px-3 focus:outline-none rounded md:mt-0 text-xs ml-3 text-white antialiased font-bold"><small>BUY
                                             NOW</small>
-                                    </button>
+                                    </a>
                                 </div>
-                                <div class="mt-2 text-sm antialiased font-black">3-COURSE BUNDLE | 30% OFF</div>
+                                <a href="#" class="mt-2 text-sm antialiased font-black block">3-COURSE BUNDLE | 30%
+                                    OFF</a>
                                 <p class="text-xs leading-4 antialiased mt-1">Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit etiam.</p>
                             </div>
@@ -602,16 +652,16 @@
 
         </section>
 
-        <section class="overview">
-            <h1 class="text-center text-5xl font-light antialiased mt-2 mb-4">Class Instructor</h1>
+        <section class="class-instructor">
+            <h1 class="text-center text-4xl font-light antialiased mt-2 mb-4 md:text-5xl">Class Instructor</h1>
             <div class="instructor-card table-secondary p-6 mb-1">
                 <div class="container py-4 mx-auto flex flex-wrap custom-width justify-center">
                     <div class="instructors lg:w-3/5 md:w-full">
-                        <div class="pr-5  flex items-start">
-                            <img class="rounded-full float-left h-20 mr-6"
+                        <div class="flex items-center flex-col text-center sm:items-start sm:flex-row sm:text-left">
+                            <img class="rounded-full float-left h-20 mr-0 mb-4 sm:mb-0 sm:mr-6"
                                 src="https://randomuser.me/api/portraits/men/1.jpg">
                             <div class="instructor-details flex flex-col">
-                                <span class="text-3xl font-light antialiased">
+                                <span class="text-3xl font-light antialiased leading-8 mb-1">
                                     Aaron Nace
                                 </span>
                                 <span class="text-xs font-medium antialiased">
@@ -631,11 +681,11 @@
             <div class="instructor-card table-secondary p-6 mb-1">
                 <div class="container py-4 mx-auto flex flex-wrap custom-width justify-center">
                     <div class="instructors lg:w-3/5 md:w-full">
-                        <div class="pr-5  flex items-start">
-                            <img class="rounded-full float-left h-20 mr-6"
+                        <div class="flex items-center flex-col text-center sm:items-start sm:flex-row sm:text-left">
+                            <img class="rounded-full float-left h-20 mr-0 mb-4 sm:mb-0 sm:mr-6"
                                 src="https://randomuser.me/api/portraits/men/7.jpg">
                             <div class="instructor-details flex flex-col">
-                                <span class="text-3xl font-light antialiased">
+                                <span class="text-3xl font-light antialiased leading-8 mb-1">
                                     John Stackfold
                                 </span>
                                 <span class="text-xs font-medium antialiased">
@@ -655,11 +705,11 @@
             <div class="instructor-card table-secondary p-6 mb-1">
                 <div class="container py-4 mx-auto flex flex-wrap custom-width justify-center">
                     <div class="instructors lg:w-3/5 md:w-full">
-                        <div class="pr-5  flex items-start">
-                            <img class="rounded-full float-left h-20 mr-6"
+                        <div class="flex items-center flex-col text-center sm:items-start sm:flex-row sm:text-left">
+                            <img class="rounded-full float-left h-20 mr-0 mb-4 sm:mb-0 sm:mr-6"
                                 src="https://randomuser.me/api/portraits/men/9.jpg">
                             <div class="instructor-details flex flex-col">
-                                <span class="text-3xl font-light antialiased">
+                                <span class="text-3xl font-light antialiased leading-8 mb-1">
                                     Michael Bolard
                                 </span>
                                 <span class="text-xs font-medium antialiased">
@@ -682,7 +732,7 @@
             <div class="container py-4 mx-auto custom-width justify-center">
 
                 <div
-                    class="similar-courses-title sm:text-center similar-courses-color text-xs font-bold antialiased mb-8">
+                    class="similar-courses-title text-center similar-courses-color text-base md:text-xs font-bold antialiased mb-8">
                     <span class="p-2">SIMILAR
                         COURSES</span>
                 </div>
@@ -694,77 +744,83 @@
                         <div class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3  gap-4">
                             <div class="course-card">
                                 <div class="h-40 overflow-hidden w-full relative">
-                                    <img alt="content" class="object-cover object-center h-full w-full"
-                                        src="assets/img/course.png">
+                                    <a href="#"><img alt="content" class="object-cover object-center h-full w-full"
+                                            src="assets/img/course.png"></a>
                                     <div
                                         class="text-xs px-2 red-badge text-white rounded block antialiased font-bold mr-2 absolute course-badge">
                                         <small>PRO</small></div>
                                 </div>
 
-                                <p class="text-xs leading-snug p-2 orange-color antialiased font-bold">Lorem ipsum
-                                    dolor
-                                    siteus ametus ons ecta adipile.
-                                </p>
-                            </div>
-                            <div class="course-card">
-                                <div class="h-40 overflow-hidden w-full relative">
-                                    <img alt="content" class="object-cover object-center h-full w-full"
-                                        src="assets/img/course.png">
-                                    <div
-                                        class="text-xs px-2 red-badge text-white rounded block antialiased font-bold mr-2 absolute course-badge">
-                                        <small>PRO</small></div>
-                                </div>
-
-                                <p class="text-xs leading-snug p-2 similar-courses-text antialiased font-bold">Lorem
+                                <a href="#"
+                                    class="text-xs leading-snug p-2 orange-color antialiased font-bold block">Lorem
                                     ipsum
                                     dolor
                                     siteus ametus ons ecta adipile.
-                                </p>
+                                </a>
                             </div>
                             <div class="course-card">
                                 <div class="h-40 overflow-hidden w-full relative">
-                                    <img alt="content" class="object-cover object-center h-full w-full"
-                                        src="assets/img/course.png">
+                                    <a href="#"><img alt="content" class="object-cover object-center h-full w-full"
+                                            src="assets/img/course.png"></a>
+                                    <div
+                                        class="text-xs px-2 red-badge text-white rounded block antialiased font-bold mr-2 absolute course-badge">
+                                        <small>PRO</small></div>
+                                </div>
+
+                                <a href="#"
+                                    class="text-xs leading-snug p-2 orange-color antialiased font-bold block">Lorem
+                                    ipsum
+                                    dolor
+                                    siteus ametus ons ecta adipile.
+                                </a>
+                            </div>
+                            <div class="course-card">
+                                <div class="h-40 overflow-hidden w-full relative">
+                                    <a href="#"><img alt="content" class="object-cover object-center h-full w-full"
+                                            src="assets/img/course.png"></a>
                                     <div
                                         class="text-xs px-2 green-badge text-white rounded block antialiased font-bold mr-2 absolute course-badge">
                                         <small>FREE</small></div>
                                 </div>
 
-                                <p class="text-xs leading-snug p-2 similar-courses-text antialiased font-bold">Lorem
+                                <a href="#"
+                                    class="text-xs leading-snug p-2 orange-color antialiased font-bold block">Lorem
                                     ipsum
                                     dolor
                                     siteus ametus ons ecta adipile.
-                                </p>
+                                </a>
                             </div>
                             <div class="course-card">
                                 <div class="h-40 overflow-hidden w-full relative">
-                                    <img alt="content" class="object-cover object-center h-full w-full"
-                                        src="assets/img/course.png">
+                                    <a href="#"><img alt="content" class="object-cover object-center h-full w-full"
+                                            src="assets/img/course.png"></a>
                                     <div
                                         class="text-xs px-2 red-badge text-white rounded block antialiased font-bold mr-2 absolute course-badge">
                                         <small>PRO</small></div>
                                 </div>
 
-                                <p class="text-xs leading-snug p-2 similar-courses-text antialiased font-bold">Lorem
+                                <a href="#"
+                                    class="text-xs leading-snug p-2 orange-color antialiased font-bold block">Lorem
                                     ipsum
                                     dolor
                                     siteus ametus ons ecta adipile.
-                                </p>
+                                </a>
                             </div>
                             <div class="course-card">
                                 <div class="h-40 overflow-hidden w-full relative">
-                                    <img alt="content" class="object-cover object-center h-full w-full"
-                                        src="assets/img/course.png">
+                                    <a href="#"><img alt="content" class="object-cover object-center h-full w-full"
+                                            src="assets/img/course.png"></a>
                                     <div
                                         class="text-xs px-2 green-badge text-white rounded block antialiased font-bold mr-2 absolute course-badge">
                                         <small>FREE</small></div>
                                 </div>
 
-                                <p class="text-xs leading-snug p-2 similar-courses-text antialiased font-bold">Lorem
+                                <a href="#"
+                                    class="text-xs leading-snug p-2 orange-color antialiased font-bold block">Lorem
                                     ipsum
                                     dolor
                                     siteus ametus ons ecta adipile.
-                                </p>
+                                </a>
                             </div>
                         </div>
 
@@ -773,8 +829,33 @@
             </div>
         </section>
     </div>
+    <style>
+        .stick {
+            position: -webkit-sticky;
+            position: -moz-sticky;
+            position: -o-sticky;
+            position: -ms-sticky;
+            position: sticky;
+            top: 0;
+        }
 
+        .stick[stuck] {
+            box-shadow: 0 0 16px black;
+            display: none;
+        }
+    </style>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script>
+        var observer = new IntersectionObserver(function (entries) {
+            if (entries[0].intersectionRatio === 0)
+                document.querySelector("#nav-container").classList.add("nav-container-sticky");
+            else if (entries[0].intersectionRatio === 1)
+                document.querySelector("#nav-container").classList.remove("nav-container-sticky");
+        }, { threshold: [0, 1] });
+
+        observer.observe(document.querySelector("#nav-container-top"));
+        console.log(observer);
+    </script>
 </body>
 
 </html>
